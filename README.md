@@ -1,6 +1,13 @@
 # UCI-HAR
 Human Activity Recognition Using Smartphones Data Set 
 
+The R script called <b>run_analysis.R</b> does the following. 
+- Merges the training and the test sets to create one data set.
+- Extracts only the measurements on the mean and standard deviation for each measurement. 
+- Uses descriptive activity names to name the activities in the data set
+- Appropriately labels the data set with descriptive variable names. 
+- A tidy data set with the average of each variable for each activity and each subject.
+
 ##Abstract:
 Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
@@ -24,3 +31,4 @@ For each record in the dataset it is provided:
 - Each feature vector is a row on the text file.
 - The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2).
 - The gyroscope units are rad/seg.
+
