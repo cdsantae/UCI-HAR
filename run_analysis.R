@@ -97,13 +97,13 @@ for(i in 1:numSubj) # 1 - 30
    for(j in 1:numAct) # 1 - 6
    {
       # Obtain all data for subject i and action j
-      data<-Dataset[Dataset$NumSubject==i & Dataset$ID==j,]
+      TidyData<-Dataset[Dataset$NumSubject==i & Dataset$ID==j,]
 
       # Select the cualitative variables
-      cuali<-data[1,1:3]
+      cuali<-TidyData[1,1:3]
 
       # Select the rest of variables
-      rest<-data[,c(-1,-2,-3)]
+      rest<-TidyData[,c(-1,-2,-3)]
       
       # Place the mean of each subject for each activity
       finalFrame<-rbind(TidyData, data.frame(c(cuali, colMeans(rest))))
